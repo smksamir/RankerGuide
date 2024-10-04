@@ -41,9 +41,9 @@
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo">
+      <div class="logo">
         <a href="index.html"><img src="assets/img/rankerguide_logo.png" class="img-fluid" alt="RankerGuide logo" /></a>
-      </h1>
+      </div>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -78,15 +78,16 @@
   <section id="hero" class="d-flex align-items-center" >
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
       <div class="row hero-bg" >
-        <div class="col-md-4" data-aos="fade-left" tabindex="0">
-          <img src="assets/img/ranker-start.png" alt="a child representing as student" class="img-fluid" />
+        <div class="col-md-4" data-aos="fade-left" tabindex="0" role="img" aria-label="a child representing as student" class="img-fluid">
+          <img src="assets/img/ranker-start.png" alt="" />
         </div>
+        
         <div class="col-md-8" data-aos="fade-right" >
           <h2 tabindex="0">
             Study for Exams with selective courses and mentors and get Assured
             Job Placements
           </h2>
-          <ul class="playstore">
+          <ul class="playstore"  >
             <li >
               <a href="#"><img src="assets/img/google-play-badge 2.png" class="img-fluid" alt="google play store link" /></a>
             </li>
@@ -107,8 +108,8 @@
       <div class="container" data-aos="zoom-in">
         <div class="row">
           <div class="col-md-3"></div>
-          <div class="col-md-6" >
-            <img src="assets/img/why-ranker-guide.png" alt=" representing why to chose ranker guide  " class="img-fluid" tabindex="0"/>
+          <div class="col-md-6" role="img" aria-label="representing why to chose ranker guide" tabindex="0"  >
+            <img src="assets/img/why-ranker-guide.png" alt=""  class="img-fluid"  />
           </div>
           <div class="col-md-3"></div>
         </div>
@@ -120,12 +121,12 @@
     <section id="about" class="about" >
       <div class="container">
         <div class="row" >
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" tabindex="0">
-            <img src="assets/img/ranker-one-stop.png" class="img-fluid" alt="Image representing mobile app page for e-learning" />
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" tabindex="0" role="img" aria-label="Image representing mobile app page for e-learning">
+            <img src="assets/img/ranker-one-stop.png" class="img-fluid" alt="" />
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" >
-            <div class="icon-img" tabindex="0">
-              <img src="assets/img/eLearning.png" class="img-fluid" alt="sketch representation with book in computer monitor" />
+            <div class="icon-img" tabindex="0" role="img" aria-label="sketch representation with book in computer monitor">
+              <img src="assets/img/eLearning.png" class="img-fluid" alt="" />
             </div>
             <h2 class="icon-text" tabindex="0">eLearning</h2>
             <h3 tabindex="0">
@@ -160,8 +161,8 @@
       <div class="container" >
         <div class="row" >
           <div class="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-2 content" data-aos="fade-right" >
-            <div class="icon-img" tabindex="0">
-              <img src="assets/img/admission-icon.png" class="img-fluid" alt="sketch of Institution" />
+            <div class="icon-img" tabindex="0" role="img" aria-label="sketch of Institution">
+              <img src="assets/img/admission-icon.png" class="img-fluid" alt="" />
             </div>
             <h2 class="icon-text" tabindex="0">Admission</h2>
             <h3 tabindex="0">
@@ -407,12 +408,14 @@
                 <div class="col-md-6 form-group">
                   <label>
                     Your Name*
-                  <input 
-                  type="text" 
-                  class="form-control" 
-                  id="name" 
-                  placeholder="" required
-                  tabindex="0" />
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    id="name" 
+                    placeholder="" 
+                    required
+                    tabindex="0" 
+                    autocomplete="name" />
                 </label>
               
                 </div>
@@ -420,7 +423,7 @@
                   <label>
                     Your email*
                   <input type="email" class="form-control" name="email" id="email" placeholder="" required
-                    tabindex="0" />
+                    tabindex="0" autocomplete="email" />
                   </label>
                 </div>
               </div>
@@ -435,7 +438,7 @@
                 <label >
                   Enter the message*
                 <textarea class="form-control" name="message" rows="5" placeholder="" required
-                  tabindex="0"></textarea>
+                  tabindex="0" ></textarea>
                 </label>
               </div>
               <div class="my-3">
